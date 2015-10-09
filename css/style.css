@@ -1,0 +1,296 @@
+/*** General page set up and colors ***/
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+.flex-box {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+#main {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+h2,
+h3,
+h4,
+h5 {
+	padding: 10px 5%;
+}
+
+h1 {
+	font-size: 40px;
+	color: #000;
+	line-height: 48px;
+	display: inline;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 26px;
+	color: #000;
+	line-height: 29px;
+	display: inline-block;
+	padding-right: 0;
+}
+
+h3 {
+	font-style: italic;
+	font-size: 20px;
+	color: #000;
+	line-height: 22px;
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 14px;
+	color: #4a4a4a;
+	line-height: 17px;
+}
+
+p {
+	font-size: 14px;
+	color: #333;
+	line-height: 21px;
+}
+
+a {
+	color: #1199c3;
+	text-decoration: none;
+	margin-top: 10px;
+	display: block;
+}
+
+li {
+	display: inline-block;
+	padding-bottom: 5px;
+}
+
+img {
+	padding: 10px;
+}
+
+span {
+	padding: 5px;
+}
+
+/*** Text Color ***/
+.green-text {
+	color: #0033cc;
+}
+
+.white-text {
+	font-weight: bold;
+	color: #000;
+}
+
+/*** Header Section ***/
+#header {
+	background-image: url(../images/mlp_sky_background_3_by_musicfirewind-d7fj1el.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	border-radius: 30px;
+}
+
+.center-content {
+	padding: 2.5% 5%;
+}
+
+.nameSub {
+	color: #000;
+}
+
+.border-underline {
+	border-bottom: 2px solid #000;
+	margin-bottom: 10px;
+}
+
+.biopic {
+	float: left;
+	padding: 10px;
+	width: 150px;
+	display: none;
+	border-radius: 30px;
+}
+
+.welcome-message {
+	font-style: italic;
+	font-size: 18px;
+	color: #000;
+	line-height: 28px;
+}
+
+#skillsH3 {
+	color: #0033cc;
+	display: none;
+}
+
+#skills {
+	list-style-type: none;
+}
+
+/** Resume Sections ***/
+.gray {
+	background-color: #CCFF99; /*maybe try BBE39E */
+	padding-bottom: 10px;
+	clear: both;
+}
+
+.cutie-mark-icon {
+	max-width: 50px;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#workExperience,
+#projects,
+#education,
+#mapDiv {
+	border-radius: 30px;
+	padding-bottom: 10px;
+}
+
+#workExperience {
+	background-color: #CCFF99;
+	cursor: pointer;
+}
+
+#projects {
+	background-color: #ffff99;
+	cursor: pointer;
+}
+
+#education {
+	background-color: #FFCC66;
+	cursor: pointer;
+}
+
+#mapDiv {
+	background-color: #FF8566;
+}
+
+#map-title-container {
+	cursor: pointer;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+	padding: 0 5%;
+}
+
+.work-title {
+	color: #40185b;
+	font-size: 18px;
+	padding-left: 15px;
+}
+
+.project-title,
+.school-title,
+.class-title {
+	color: #40185b;
+	font-size: 18px;
+	text-decoration: underline;
+	padding-left: 15px;
+}
+
+.date-text {
+	font-style: italic;
+	font-size: 14px;
+	color: #555;
+	line-height: 16px;
+	float: left;
+}
+
+.location-text {
+	font-style: italic;
+	font-size: 14px;
+	color: #555;
+	line-height: 16px;
+	float: right;
+
+}
+
+/*** Map ***/
+#map {
+	display: block;
+	height: 100%;
+	margin: 0 5%;
+}
+
+#mapDiv {
+	height: 100px;
+	width: 100%;
+	padding-bottom: 5%;
+}
+
+/*** Bar chart stuff ***/
+.chart div {
+	font: 10px sans-serif;
+	background-color: #4a4a4a;
+	text-align: right;
+	padding: 3px;
+	margin: 1px;
+	height: 12px;
+	color: white;
+	display: inline-block;
+}
+
+/*** Footer ***/
+#letsConnect {
+	text-align: center;
+	background-color: #97e7e8;
+	border-radius: 30px;
+}
+
+#footerContacts {
+	background-color: #ffff99;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+/*** Responsive Design ***/
+@media only screen and (max-width: 1024px) {
+	#letsConnect {
+		margin-top: 5%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.biopic {
+		width: 175px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	#letsConnect {
+		margin-top: 10%;
+	}
+	.biopic {
+		width: 150px;
+	}
+	.welcome-message {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 750px) {
+	#skillsH3,
+	.biopic {
+		display: block;
+	}
+}

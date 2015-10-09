@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Resume</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/helper.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+  <meta name="viewport" content="width=device-width">
+</head>
+<body unresolved>
+  <div id="main">
+    <div id="header" class="center-content clearfix">
+    </div>
+    <div style='clear: both;'></div>
+    <div id="workExperience">
+      <h2>Work Experience</h2>
+      <img class="cutie-mark-icon" src="images/FANMADE_Rainbow_Dash_Cutie_Mark_small.png" alt="Rainbow Dash Cutie Mark">
+    </div>
+    <div id="projects">
+      <h2>Projects</h2>
+      <img class="cutie-mark-icon" src="images/FANMADE_Rainbow_Dash_Cutie_Mark_small.png" alt="Rainbow Dash Cutie Mark">
+    </div>
+    <div id="education">
+      <h2>Education</h2>
+      <img class="cutie-mark-icon" src="images/FANMADE_Rainbow_Dash_Cutie_Mark_small.png" alt="Rainbow Dash Cutie Mark">
+    </div>
+    <div id="mapDiv">
+      <div id="map-title-container">
+        <h2 id="map-title">Where I've Lived and Worked</h2>
+        <img class="cutie-mark-icon" src="images/FANMADE_Rainbow_Dash_Cutie_Mark_small.png" alt="Rainbow Dash Cutie Mark">
+      </div>
+    </div>
+    <div id="letsConnect">
+      <h2 class='green center-text'>Created by</h2>
+        <ul id="footerContacts" class="flex-box">
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/resumeBuilder.js"></script>
+  <script type="text/javascript">
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      //document.getElementById('topContacts').style.display = 'none';
+      document.getElementById('topContacts').style.background = "#000";
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      //document.getElementById('header').style.display = 'none';
+      document.getElementById('header').style.backgroundColor = "#000";
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      //document.getElementById('workExperience').style.display = 'none';
+      document.getElementById('workExperience').style.backgroundColor = "#000";
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      //document.getElementById('projects').style.display = 'none';
+      document.getElementById('projects').style.backgroundColor = "#000";
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      //document.getElementById('education').style.display = 'none';
+      document.getElementById('education').style.backgroundColor = "#000";
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      //document.getElementById('letsConnect').style.display = 'none';
+      document.getElementById('letsConnect').style.backgroundColor = "#000";
+    }
+    if(document.getElementById('map') === null) {
+      //document.getElementById('mapDiv').style.display = 'none';
+      document.getElementById('mapDiv').style.backgroundColor = "#000";
+    }
+  </script>
+</body>
+</html>
