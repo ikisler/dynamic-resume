@@ -1,3 +1,12 @@
+/*****
+"Dynamic Resume" by Isabeau Kisler
+Application shows a resume for the fictional character, Rainbow Dash.
+
+Project created for Udacity's Front-End Nano-Degree using
+jQuery and Google Maps API.
+
+10/15
+*****/
 
 'use strict';
 
@@ -5,7 +14,7 @@
 var rainbowDashBio = {
 	"name": "Rainbow Dash",
 	"role": "Representative of the Element of Loyalty",
-	"welcomeMessage": "Hello there!  Welcome to my resume, built using jQuery.",
+	"welcomeMessage": "Hi there!  Welcome to my resume, built using jQuery.",
 	"contact": {
 		"location": "Ponyville, Equestria"
 	},
@@ -72,32 +81,6 @@ var education = {
 		"dates": "Dec 2012",
 		"url": ""
 	}]
-
-	/***	Unused information
-	"onlineCourse": [{
-		"title": "Intro to HTML and CSS",
-		"school": "Udacity",
-		"dates": "June 2015",
-		"url": "http://www.udacity.com"
-	},
-	{
-		"title": "Responsive Web Design",
-		"school": "Udacity",
-		"dates": "June 2015",
-		"url": "http://www.udacity.com"
-	},
-	{
-		"title": "Responsive Images",
-		"school": "Udacity",
-		"dates": "June 2015",
-		"url": "http://www.udacity.com"
-	},
-	{
-		"title": "How to Use Git and Github",
-		"school": "Udacity",
-		"dates": "May 2015",
-		"url": "http://www.udacity.com"
-	}]***/
 };
 
 /*** Functions that add info to the page ***/
@@ -287,27 +270,6 @@ education.display = function() {
 
 
 	}
-	/*** Unused
-	// Add header for online classes
-	$(".education-entry:last").append(HTMLonlineClasses);
-
-	// Add online classes
-	onlineLen = education.onlineCourse.length;
-	for(var j=0; j<onlineLen; j++) {
-
-		formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourse[j].title);
-		formattedTitle = formattedTitle.replace("#", education.onlineCourse[j].url);
-		formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourse[j].school);
-		$(".education-entry:last").append(formattedTitle + formattedSchool);
-
-		formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourse[j].dates);
-		$(".education-entry:last").append(formattedDates);
-
-		formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourse[j].url);
-		formattedURL = formattedURL.replace("#", education.onlineCourse[j].url);
-		$(".education-entry:last").append(formattedURL);
-	}
-	***/
 };
 
 /*** Call Functions to Display Content ***/
@@ -350,8 +312,6 @@ $(function() {
 
     $("#map-title-container").click(function() {
         $("#map").toggle();
-        initializeMap();
-        map.fitBounds(mapBounds);
 
         // Adjusts the div height based on whether the map is displayed
         if($("#map").css("display") ==="none") {
@@ -359,5 +319,7 @@ $(function() {
     	} else {
     		$("#mapDiv").css("height","350px");
     	}
+
+    	initializeMap();
     });
 });

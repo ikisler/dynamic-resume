@@ -61,8 +61,8 @@ h4 {
 }
 
 p {
-	font-size: 14px;
-	color: #333;
+	font-size: 1em;
+	color: #000;
 	line-height: 21px;
 }
 
@@ -87,11 +87,11 @@ span {
 }
 
 /*** Text Color ***/
-.green-text {
+.blue-text {
 	color: #0033cc;
 }
 
-.white-text {
+.black-text {
 	font-weight: bold;
 	color: #000;
 }
@@ -101,6 +101,8 @@ span {
 	background-image: url(../images/mlp_sky_background_3_by_musicfirewind-d7fj1el.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+	background-size: 100%;
+	background-color: #66FFFF;
 	border-radius: 30px;
 }
 
@@ -120,8 +122,7 @@ span {
 .biopic {
 	float: left;
 	padding: 10px;
-	width: 150px;
-	display: none;
+	width: 200px;
 	border-radius: 30px;
 }
 
@@ -134,20 +135,9 @@ span {
 
 #skillsH3 {
 	color: #0033cc;
-	display: none;
-}
-
-#skills {
-	list-style-type: none;
 }
 
 /** Resume Sections ***/
-.gray {
-	background-color: #CCFF99; /*maybe try BBE39E */
-	padding-bottom: 10px;
-	clear: both;
-}
-
 .cutie-mark-icon {
 	max-width: 50px;
 	padding: 0;
@@ -193,12 +183,7 @@ span {
 	padding: 0 5%;
 }
 
-.work-title {
-	color: #40185b;
-	font-size: 18px;
-	padding-left: 15px;
-}
-
+.work-title,
 .project-title,
 .school-title,
 .class-title {
@@ -225,10 +210,14 @@ span {
 
 }
 
+.work-description li {
+	display: block;
+}
+
 /*** Map ***/
 #map {
 	display: block;
-	height: 100%;
+	height: 90%;
 	margin: 0 5%;
 }
 
@@ -236,18 +225,6 @@ span {
 	height: 100px;
 	width: 100%;
 	padding-bottom: 5%;
-}
-
-/*** Bar chart stuff ***/
-.chart div {
-	font: 10px sans-serif;
-	background-color: #4a4a4a;
-	text-align: right;
-	padding: 3px;
-	margin: 1px;
-	height: 12px;
-	color: white;
-	display: inline-block;
 }
 
 /*** Footer ***/
@@ -264,33 +241,49 @@ span {
 }
 
 /*** Responsive Design ***/
-@media only screen and (max-width: 1024px) {
-	#letsConnect {
-		margin-top: 5%;
-	}
-}
-
-@media only screen and (max-width: 900px) {
+@media (max-width: 900px) {
 	.biopic {
 		width: 175px;
 	}
 }
 
-@media only screen and (max-width: 750px) {
-	#letsConnect {
-		margin-top: 10%;
-	}
+@media (max-width: 750px) {
 	.biopic {
 		width: 150px;
 	}
+
 	.welcome-message {
-		display: none;
+		font-size: 1em;
 	}
 }
 
-@media only screen and (min-width: 750px) {
-	#skillsH3,
-	.biopic {
+@media (max-width: 630px) {
+	#name,
+	.nameSub {
 		display: block;
+	}
+
+	.biopic-container {
+		text-align: center;
+	}
+
+	.biopic {
+		float: none;
+	}
+
+	#header {
+	background-size: auto 100%;
+	background-color: #66FFFF;
+	border-radius: 30px;
+}
+}
+
+@media (max-width: 430px) {
+	h2 {
+		font-size: 1.3em;
+	}
+
+	.cutie-mark-icon {
+		max-width: 40px;
 	}
 }
