@@ -19,7 +19,7 @@ var rainbowDashBio = {
 		"location": "Ponyville, Equestria"
 	},
 	"skills": ["Speed", "Agility", "Guts", "Style", "Coolness", "Awesomness", "Radicalness"],
-	"pic":"images/Rainbow_Dash_Wonderbolt_fantasy_cropped_S1E3.png"
+	"pic":"images/Rainbow_Dash_Wonderbolt_fantasy_cropped_S1E3_small.png"
 };
 
 var kislerBio = {
